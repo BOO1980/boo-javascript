@@ -1,6 +1,3 @@
 [submodule "javascript-frameworks/boo-angular"]
 	path = javascript-frameworks/boo-angular
 	url = https://github.com/BOO1980/boo-angular.git
-[submodule "boo-pixiJS"]
-	path = boo-pixiJS
-	url = https://github.com/BOO1980/boo-pixiJS.git
