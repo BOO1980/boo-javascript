@@ -2,3 +2,6 @@
 	path = javascript-frameworks/boo-angular
 	url = https://github.com/BOO1980/boo-angular.git
 
+[submodule "javascript-libraries/boo-pixiJS"]
+	path = javascript-libraries/boo-pixiJS
+	url = https://github.com/BOO1980/boo-pixiJS.git
