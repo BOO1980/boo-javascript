@@ -8,3 +8,6 @@
 [submodule "javascript-libraries/boo-react"]
 	path = javascript-libraries/boo-react
 	url = https://github.com/BOO1980/boo-react.git
+[submodule "javascript-frameworks/boo-vue.js"]
+	path = javascript-frameworks/boo-vue.js
+	url = https://github.com/BOO1980/boo-vue.js.git
