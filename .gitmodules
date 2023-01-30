@@ -11,3 +11,9 @@
 [submodule "javascript-frameworks/boo-vue.js"]
 	path = javascript-frameworks/boo-vue.js
 	url = https://github.com/BOO1980/boo-vue.js.git
+[submodule "libraries/boo-vanilla.js"]
+	path = libraries/boo-vanilla.js
+	url = https://github.com/BOO1980/boo-vanilla.js.git
+[submodule "javascript-libraries/boo-vanilla.js"]
+	path = javascript-libraries/boo-vanilla.js
+	url = https://github.com/BOO1980/boo-vanilla.js.git
