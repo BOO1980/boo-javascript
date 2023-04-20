@@ -1,11 +1,14 @@
 # boo-javascrip
 ## training tracker
-https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript
-https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comment-your-javascript-code
-https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/declare-javascript-variables
-https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/storing-values-with-the-assignment-operator  30/01/2023
-https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/assigning-the-value-of-one-variable-to-another 20/03/2023
+
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-uninitialized-variables 20/04/2023
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/declare-string-variables 20/04/2023
 https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/initializing-variables-with-the-assignment-operator 22/03/2023
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/assigning-the-value-of-one-variable-to-another 20/03/2023
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/storing-values-with-the-assignment-operator  30/01/2023
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/declare-javascript-variables - done ??/??/2022
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/comment-your-javascript-code - done ??/??/2022
+https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript  - done ??/??/2022
 
 ## resources
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
