@@ -2,6 +2,9 @@
 	path = javascript-frameworks/boo-angular
 	url = https://github.com/BOO1980/boo-angular.git
 
+[submodule "javascript-libraries/boo-pixiJS"]
+	path = javascript-libraries/boo-pixiJS
+	url = https://github.com/BOO1980/boo-pixiJS.git
 [submodule "javascript-libraries/boo-react"]
 	path = javascript-libraries/boo-react
 	url = https://github.com/BOO1980/boo-react.git
@@ -14,3 +17,6 @@
 [submodule "javascript-frameworks/boo-nuxt.js"]
 	path = javascript-frameworks/boo-nuxt.js
 	url = https://github.com/BOO1980/boo-nuxt.js.git
+[submodule "javascript-libraries/boo-jquery"]
+	path = javascript-libraries/boo-jquery
+	url = https://github.com/BOO1980/boo-jquery.git
