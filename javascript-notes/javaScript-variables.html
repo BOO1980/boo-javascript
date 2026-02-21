@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../prettierrc.json" />
     <link rel="stylesheet" href="../assets/style.css" />
     <title>JavaScript Variables</title>
 </head>
@@ -44,6 +43,12 @@
                     underscores, or dollar signs.</li>
                 <li>A Variable can hold a string, a number, a boolean, an array, another object, or a function reference
                 </li>
+                <li>In modern JavaScript, let and const are the preferred ways to declare variables, but they differ in
+                    how they handle value assignment and reassignment. </li>.3
+                <li>The let keyword allows you to declare variables that can be updated or reassigned later. You can
+                    think of let as a flexible container – once you've stored a value in it, you can change that value
+                    as needed throughout your program. </li>
+
                 <li>When you define a variable using the var keyword means you can access these variables on a local
                     scope
                 </li>
@@ -87,6 +92,8 @@
                     that
                     variable to another variable using the assignment operator.</li>
                 <li>When JavaScript variables are declared, they have an inital valye of undefined</li>
+                <li>const is used to declare variables that are constant. Once you assign a value to a variable declared
+                    with const, you cannot reassign it. </li>
                 <li>If you do a mathematical operation on an undefined varaible the result will be NaN, which means "Not
                     A
                     Number"</li>
@@ -115,6 +122,18 @@
                 <li>var does not print in the console log if there is an error</li>
                 <li>var variable shows as undefined if there is an error</li>
                 <li>best practice always use a let keyword</li>
+                <li>You can also use the var keyword, but it's not as recommended anymore. The var is kind of like let,
+                    except it has a wider scope, which is more likely to cause problems in your program.</li>
+                <li>Using var can lead to unexpected behavior because it does not have block scoping, which means that
+                    variables declared with var are accessible outside of the block they were defined in. This can lead
+                    to bugs and unintended consequences if you accidentally overwrite a variable or if you have multiple
+                    variables with the same name in different parts of your code.</li>
+                <li>Using let and const helps to prevent these issues by providing block scoping, which means that
+                    variables declared with let and const are only accessible within the block they were defined in.
+                    This can help to make your code more predictable and easier to debug.</li>
+                <li>In general, it's best to use let and const for variable declarations in modern JavaScript, and to
+                    avoid using var unless you have a specific reason to do so.</li>
+
             </ul>
             <h2>The rules regarding scope</h2>
             <ul>
@@ -205,6 +224,12 @@
                         updated with new values.</p>
 
                 </li>
+                <li><code>const PI = 3.14;</code>
+                    <p>This code declares a constant variable named PI and assigns it the value of 3.14. Since PI is
+                        declared with const, its value cannot be changed later in the program. Attempting to reassign a
+                        new value to PI would result in an error.</p>
+
+                </li>
             </ul>
         </section>
         <section id="questions">
@@ -220,6 +245,10 @@
                 <li>Why is it important to use descriptive variable names in your code?</li>
                 <li>What happens if you try to reassign a value to a variable declared with const?</li>
                 <li>What is the scope of a variable declared with var compared to let and const?</li>
+                <li>How does JavaScript handle variable hoisting with var, let, and const?</li>
+                <li>Can you declare a const variable without assigning it a value?</li>
+                <li>What happens if you try to reassign a value to a variable declared with const?</li>
+                <li>How do you assign a number to a constant variable named maxScore?</li>
             </ul>
         </section>
         <section id="resources">
@@ -233,6 +262,11 @@
                         href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-javascript/what-are-variables">
                         freeCodeCamp: What Are Variables, and What Are Guidelines for Naming JavaScript Variables?
                     </a></li>
+                <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-javascript/how-do-let-and-const-work">
+                        freeCodeCamp: How Do let and const Work Differently When It Comes to Variable Declaration,
+                        Assignment, and Reassignment?
+                    </a></li>
             </ul>
         </section>
         <section id="todo">
@@ -241,6 +275,9 @@
                 <li>Review and expand notes with more code examples</li>
                 <li>Clean up the code using ChatGPT suggestions</li>
                 <li>Start building projects to apply what I've learned</li>
+                <li>Check Out: <a href="https://ydkj-doc.vercel.app/" target="_blank" rel="noopener noreferrer">YDKJ
+                        Doc</a></li>
+
             </ul>
         </section>
     </main>

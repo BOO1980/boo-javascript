@@ -4,19 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../prettierrc.json" />
     <link rel="stylesheet" href="../assets/style.css" />
-    <title>Learning Tracker</title>
+    <title>JavaScript: Learning Tracker</title>
 </head>
 
 <header class="topic-bar">
     <div class="topic-bar__inner">
         <div class="topic-bar__title">
-            <h1>Tracking</h1>
-            <div class="meta">
-                <span class="pill">One page, all progress</span>
-                <span class="pill">Links open in a new tab</span>
-            </div>
+            <h1>JavaScript: Learning Tracker</h1>
         </div>
 
         <nav class="quick-links" aria-label="On this page">
@@ -30,7 +25,14 @@
 <div id="sidebar-mount"></div>
 
 <main class="content">
-    <h1>Tracking</h1>
+    <section class="card" aria-label=" Progress legend">
+        <h2>Progress Legend</h2>
+        <ul class="legend-list">
+            <li><span class="legend-dot complete"></span> Complete</li>
+            <li><span class="legend-dot in-progress"></span> In Progress</li>
+            <li><span class="legend-dot not-started"></span> Not Started</li>
+        </ul>
+    </section>
     <section id="overview" class="card" aria-labelledby="overview-title">
         <h2 id="overview-title">Overview</h2>
         <p class="muted">
@@ -41,8 +43,8 @@
     </section>
     <section id="fcc" class="card" aria-labelledby="fcc-title">
         <h2 id="fcc-title">FreeCodeCamp</h2>
-        <section>
-            <h2>Introduction to JavaScript [1/4]</h2>
+        <article class="track-item" data-status="complete">
+            <h2>Introduction to JavaScript [4/4]</h2>
             <ul>
                 <li><a target="_blank" rel="noopener noreferrer"
                         href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-javascript/what-is-javascript">
@@ -54,8 +56,34 @@
                         What Is a Data Type, and What Are the Different Data Types in JavaScript?
                     </a>
                 </li>
+                <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-javascript/what-are-variables">
+                        What Are Variables, and How Do They Work in JavaScript?
+                    </a>
+                </li>
+                <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-javascript/how-do-let-and-const-work">
+                        How Do let and const Work Differently When It Comes to Variable Declaration, Assignment, and
+                        Reassignment?
+                    </a>
+                </li>
             </ul>
-        </section>
+        </article>
+        <article class="track-item" data-status="in-progress">
+            <h2>Introduction to Strings [1/3]</h2>
+            <ul>
+                <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-strings/what-is-a-string">
+                        What Is a String in JavaScript, and What Is String Immutability?
+                    </a>
+                </li>
+                <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-strings/what-is-string-concatenation">
+                        What Is String Concatenation, and How Can You Concatenate Strings with Variables?
+                    </a>
+
+            </ul>
+        </article>
     </section>
     <section id="todo" class="card" aria-labelledby="todo-title">
         <h2 id="todo-title">TODO</h2>

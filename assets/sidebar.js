@@ -33,6 +33,7 @@
           <a href="${href('javaScript-notes/javaScript-data-types.html')}" data-page="data-types">JavaScript Data Types</a>
           <a href="${href('javaScript-notes/javaScript-variables.html')}" data-page="variables">JavaScript Variables</a>
           <a href="${href('javaScript-notes/javaScript-common-functions.html')}" data-page="common-functions">JavaScript Common Functions</a>
+          <a href="${href('javaScript-notes/javaScript-strings.html')}" data-page="strings">JavaScript Strings</a>
         </nav>
       </details>
       <details class="nav-group">

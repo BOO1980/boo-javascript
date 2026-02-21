@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <title>JavaScript Strings</title>
+
+</head>
+
+<body data-page="strings">
+    <header class="topic-bar">
+        <div class="topic-bar__title">
+            <h1>JavaScript Strings</h1>
+        </div>
+
+        <nav class="quick-links" aria-label="On this page">
+            <a href="#overview">Overview</a>
+            <a href="#keywords">Keywords</a>
+            <a href="#codekeywords">Code Keywords</a>
+            <a href="#codeexamples">Code Examples</a>
+            <a href="#questions">Questions</a>
+            <a href="#resources">Resources</a>
+            <a href="#todo">TODO</a>
+        </nav>
+    </header>
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
+
+        <section id="overview">
+            <h2>Overview</h2>
+            <ul>
+                <li>String object lets you manipulate strings</li>
+                <li>In JavaScript, a string is a sequence of characters used to represent text data</li>
+                <li>Strings are one of the primitive data types in the language, along with numbers, booleans, null, and
+                    undefined.
+                </li>
+                <li>To create a string in JavaScript, you can use single quotes ('), double quotes ("), or backticks (`)
+                    for template literals.</li>
+                <li>Even though you can use single or double quotes to create strings, it's important to be consistent.
+                    If a string begins with a single quote, it must also end with a single quote.</li>
+                <li>Another thing to take into account is that strings are immutable</li>
+                <li>In programming, immutability means that once something is created, it cannot be changed. So, when
+                    you create a string, you can't change its characters directly. Instead, you would create a new
+                    string if you want to make changes.</li>
+                <li>Since strings are immutable, we can't update the first string directly. That is why we assign a new
+                    string to the variable.</li>
+                <li>In JavaScript, working with text is an essential part of coding, and often, you'll need to combine
+                    or join pieces of text together. This process is called string concatenation.</li>
+                <li>In this lesson, we'll focus on how string concatenation works, specifically using the + operator,
+                    the += operator, and the concat() method.</li>
+                <li>The + operator is one of the simplest and most frequently used methods to concatenate strings. It
+                    allows you to join multiple strings or combine strings with variables that hold text.</li>
+                <li>One disadvantage of using the + operator for string concatenation is that it can lead to spacing
+                    issues if you don't carefully manage the spacing between the concatenated strings.</li>
+                <li>If you need to add or append to an existing string, then you can use the += operator. This is
+                    helpful when you want to build upon a string by adding more text to it over time.</li>
+                <li>Another way you can concatenate strings is to use the concat() method.</li>
+            </ul>
+        </section>
+
+        <section id="keywords">
+            <h2>Keywords</h2>
+            <ul>
+                <li>string</li>
+                <li>immutable</li>
+                <li>template literals</li>
+            </ul>
+        </section>
+
+        <section id="codekeywords">
+            <h2>Code Keywords</h2>
+            <ul>
+            </ul>
+        </section>
+
+        <section id="codeexamples">
+            <h2>Code Examples</h2>
+            <ul>
+                <li>
+                    <pre><code>let singleQuotes = 'This is a string';
+console.log(singleQuotes);</code></pre>
+                    <p>Single quotes are commonly used to define strings in JavaScript. They are simple and easy to
+                        read.</p>
+                </li>
+                <li>
+                    <pre><code>let doubleQuotes = "This is also a string";
+console.log(doubleQuotes);</code></pre>
+                    <p>Double quotes can be used interchangeably with single quotes to create strings, but it's
+                        important to be consistent within a single string.</p>
+                </li>
+                <li>
+                    <pre><code>let templateLiteral = `This is a template literal`;
+console.log(templateLiteral);</code></pre>
+                    <p>Template literals allow for embedded expressions and multi-line strings, making them more
+                        versatile than regular strings.</p>
+                </li>
+                <li>
+                    <pre><code>let developer = "Jessica";
+console.log(developer);
+developer = "Quincy";
+console.log(developer);</code></pre>
+                    <p>In this example, we first assign the string "Jessica" to the variable developer. Later, we
+                        reassign the variable to a new string "Quincy". This demonstrates that while strings themselves
+                        are immutable, variables holding strings can be reassigned to new strings.</p>
+                </li>
+                <li>
+                    <pre><code>let firstName = "John";
+                    let lastName = "Doe";
+
+                    let fullName = firstName + " " + lastName;
+                    console.log(fullName); // John Doe</code></pre>
+                    <p>In this example, we use the + operator to concatenate the firstName and lastName variables,
+                        along with a space in between, to create a full name string.</p>
+                </li>
+                <li>
+                    <pre><code>let greeting = 'Hello';
+                    greeting += ', John!';
+
+                    console.log(greeting); // "Hello, John!"</code></pre>
+                    <p>In this example, we use the += operator to append a string to the existing greeting variable,
+                        resulting in a new string "Hello, John!".</p>
+                    <p>It is important to remember that strings are immutable which means once a string is created you
+                        can not alter it.</p>
+
+                    <p>In this case, the original string of Hello is not modified. Instead, greeting now references the
+                        new string of Hello, John!</p>
+                </li>
+                <li>
+                    <pre><code>let str1 = 'Hello';
+                    let str2 = 'World';
+
+                    let result = str1.concat(' ', str2);
+                    console.log(result); // Hello World</code></pre>
+                    <p>In this example, we use the concat() method to join str1 and str2 with a space in between,
+                        resulting in the string "Hello World".</p>
+                </li>
+
+            </ul>
+        </section>
+
+        <section id="questions">
+            <h2>Questions</h2>
+            <ul>
+                <li>What happens if a string starts with a single quote and ends with a double quote?</li>
+                <li>What does it mean that strings are immutable in JavaScript?</li>
+                <li>How would you create a new string that is a modified version of an existing string?</li>
+                <li>What are template literals and how do they differ from regular strings?</li>
+                <li>How can you include variables or expressions inside a template literal?</li>
+                <li>What are some common methods available for manipulating strings in JavaScript?</li>
+                <li>How can you concatenate two or more strings in JavaScript?</li>
+                <li>What is the difference between using single quotes, double quotes, and backticks for strings in
+                    JavaScript?</li>
+                <li>What is the primary use of the + operator in string concatenation?</li>
+                <li>What is the correct way to concatenate strings?</li>
+                <li>What is the correct function to use to concatenate strings?</li>
+                <li>What is the correct operator to use to concatenate strings?</li>
+                <li>What is the correct method to use to concatenate strings?</li>
+                <li>What is the correct way to concatenate strings in JavaScript?</li>
+
+
+            </ul>
+        </section>
+        <section id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-strings/what-is-a-string"
+                        target="_blank" rel="noopener noreferrer">FreeCodeCamp: What is a String?</a></li>
+                <li>
+                    <a href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-strings/what-is-string-concatenation"
+                        target="_blank" rel="noopener noreferrer">FreeCodeCamp: What is String Concatenation?</a>
+                </li>
+            </ul>
+        </section>
+        <section id="todo">
+            <h2>TODO</h2>
+            <ul>
+                <li>Review and expand notes with more code examples</li>
+                <li>Start building projects to apply what I've learned</li>
+                <li>Check Out: <a href="https://ydkj-doc.vercel.app/" target="_blank" rel="noopener noreferrer">YDKJ
+                        Doc</a></li>
+                <li>Clean up the code using ChatGPT suggestions</li>
+
+            </ul>
+        </section>
+    </main>
+
+    <!-- Sidebar JS -->
+    <script src="../assets/script.js"></script>
+    <script src="../assets/sidebar.js"></script>
+</body>
+
+</html>
