@@ -2,13 +2,32 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../Styles/generic.css" <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../prettierrc.json" />
+    <link rel="stylesheet" href="../assets/style.css" />
     <title>JavaScript Overview</title>
 </head>
 
-<body>
-    <main>
-        <h1>JavaScript Overview</h1>
+<body data-page="overview">
+    <header class="topic-bar">
+        <div class="topic-bar__title">
+            <h1>JavaScript Overview</h1>
+        </div>
+
+        <nav class="quick-links" aria-label="On this page">
+            <a href="#overview">Overview</a>
+            <a href="#keywords">Keywords</a>
+            <a href="#codekeywords">Code Keywords</a>
+            <a href="#codeexamples">Code Examples</a>
+            <a href="#questions">Questions</a>
+            <a href="#resources">Resources</a>
+            <a href="#todo">TODO</a>
+        </nav>
+    </header>
+    <div id="sidebar-mount"></div>
+
+    <main class="content">
         <section id="overview">
             <h2>Overview</h2>
             <ul>
@@ -69,7 +88,7 @@
 
             </ul>
         </section>
-        <section id="keyWords">
+        <section id="keywords">
             <h2>Key Words</h2>
             <ul>
                 <li>JavaScript</li>
@@ -87,7 +106,7 @@
                 <li>declarative programming styles</li>
             </ul>
         </section>
-        <section id="codeKeyWords">
+        <section id="codekeywords">
             <h2>Code Keywords</h2>
             <ul>
                 <li>&lt;script&gt;</li>
@@ -111,7 +130,7 @@
                 <li></li>
             </ul>
         </section>
-        <section id="codeExamples">
+        <section id="codeexamples">
             <h2>Code Examples</h2>
             <ul>
                 <li>
@@ -138,9 +157,23 @@
                 </li>
             </ul>
         </section>
+        <section id="todo">
+            <h2>TODO</h2>
+            <ul>
+                <li>Review and expand notes with more code examples</li>
+                <li>Start building projects to apply what I've learned</li>
+                <li>Check Out: <a href="https://ydkj-doc.vercel.app/" target="_blank" rel="noopener noreferrer">YDKJ
+                        Doc</a></li>
+                <li>Clean up the code using ChatGPT suggestions</li>
+                </li>
+            </ul>
+        </section>
     </main>
 
-
+    <!-- Sidebar JS -->
+    <script src="../assets/layout.js"></script>
+    <script src="../assets/script.js"></script>
+    <script src="../assets/sidebar.js"></script>
 </body>
 
 </html>

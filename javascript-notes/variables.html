@@ -1,91 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Variables</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Assets/Styles/default.css" type="text/css">
 </head>
-<body>
-<h1>Variables</h1>
-<ul>
-    <li>A Variable is nothing more than a named reference to a piece of data</li>
-    <li>Variables are case sensitive, this means captialisation maatters</li>
-    <li>Generally variables are written in CamelCase, where each subsequent word is captialised</li>
-    <li>A Variable can hold a string, a number, a boolean, an array, another object, or a function reference</li>
-    <li>When you define a variable using the var keyword means you can access these variables on a local scope</li>
-    <li>If a variable is defined without the var keyword then the variable will be a global variable (which should be avoided)
-        <ul>
-            <li>The reason why you should avoid global variables is because the application is part of a larger JavaScript application</li>
-            <li>A variable of the same name may be in use in another part of the code in another file - and can be overridden whatever data is originally contained</li>
-            <li>Another libraries script could override the variable if it was global</li>
-        </ul>
-    </li>
-    <li>Variables in JavaScript are basically named buckets of data, a way of creating a reference to that data so you are able to access that data again and again</li>
-    <li>Variables can use variables to persist data from one process to another.</li>
-    <li>Setting the scope of the variable is important if you have global variables with the same name</li>
-    <li>A variable can hold different data types at different times depending on context</li>
-    <li>You do not need to declare the data type of the variable</li>
-    <li>Variables in JavaScript are most likely to change datatype without notice</li>
-    <li>JavaScript variables have a identifier, scope, and a specific data type.</li>
-    <li>Each variable has an identifier which is unique that is unique to the scope of use- the identifier consists of a combination of letters, digits, underscores and dollar signs</li>
-    <li>Start variables with a letter, an underscore or a dollar sign</li>
-    <li>Variables cannot contain spaces or start with a number</li>
-    <li>The equals operator assigns a data value to a varaible</li>
-    <li>If there are any calculations to the right of the = operator those are performed before the value is assigned to the variable on the left of the operator</li>
-    <li>JavaScript has built in keywords, these keywords are off limits as variable names</li>
-    <li>After a value is assigned to a variable using the assignment operator, you can assign the value of that variable to another variable using the assignment operator.</li>
-    <li>When JavaScript variables are declared, they have an inital valye of undefined</li>
-    <li>If you do a mathematical operation on an undefined varaible the result will be NaN, which means "Not A Number"</li>
-    <li>If you concatenate a string with an undefined variable you will get a sting of undefined</li>
-    <li>When declaring variables with var, they can be eaisly overwritten, when we use the let variable a varible with the same name can only be declared once </li>
-    <li>A readonly variable where it cannot be overwritten once assigned with a value is const</li>
-    <li>You cannot update a const variable with a new value</li>
-    <li>It is common for developers to use uppercase varaible identfiers for immutable values, and camel case for mutable</li>
-</ul>
-<h2>The rules regarding scope</h2>
-<ul>
-    <li>If you declare a variable with the var keyword in a function or block of code, its use is local to that function</li>
-    <li>if you use a variable without declaring its var keyword, and a global variable of the same name exists, the local variable is assumed to be the already existing global variable</li>
-    <li>If you declare a variable locally with a var keyword, but you do not initialise it (i.e. assigned a value) it is local and accessible but not defined</li>
-    <li>If you declare a variable locally without the var keyword, or explicitly declare it globally but do not initialise it, it is accessible globally but again not defined.</li>
-</ul>
 
-<h4 class="example-text">Declaring a variable</h4>
-<div class="example">
-    <pre>
+<body>
+    <main>
+        <h1>Variables</h1>
+        <section id="overview">
+            <h2>Overview</h2>
+            <ul>
+                <li>A Variable is nothing more than a named reference to a piece of data</li>
+                <li>Variables are case sensitive, this means captialisation maatters</li>
+                <li></li>
+                <li>A variable is a named container that stores a value of a specific data type, allowing you to
+                    reference
+                    and manipulate it throughout your code.</li>
+                <li>Generally variables are written in CamelCase, where each subsequent word is captialised</li>
+                <li>A Variable can hold a string, a number, a boolean, an array, another object, or a function reference
+                </li>
+                <li>When you define a variable using the var keyword means you can access these variables on a local
+                    scope
+                </li>
+                <li>You can create variables like x and y and then reference those throughout your program and do
+                    mathematical operations like addition </li>
+                <li>You can create your own variable names and assign values to them</li>
+                <li>If a variable is defined without the var keyword then the variable will be a global variable (which
+                    should
+                    be avoided)
+                    <ul>
+                        <li>The reason why you should avoid global variables is because the application is part of a
+                            larger
+                            JavaScript application</li>
+                        <li>A variable of the same name may be in use in another part of the code in another file - and
+                            can
+                            be
+                            overridden whatever data is originally contained</li>
+                        <li>Another libraries script could override the variable if it was global</li>
+                    </ul>
+                </li>
+                <li>Variables in JavaScript are basically named buckets of data, a way of creating a reference to that
+                    data
+                    so
+                    you are able to access that data again and again</li>
+                <li>Variables can use variables to persist data from one process to another.</li>
+                <li>Setting the scope of the variable is important if you have global variables with the same name</li>
+                <li>A variable can hold different data types at different times depending on context</li>
+                <li>You do not need to declare the data type of the variable</li>
+                <li>Variables in JavaScript are most likely to change datatype without notice</li>
+                <li>JavaScript variables have a identifier, scope, and a specific data type.</li>
+                <li>Each variable has an identifier which is unique that is unique to the scope of use- the identifier
+                    consists
+                    of a combination of letters, digits, underscores and dollar signs</li>
+                <li>Start variables with a letter, an underscore or a dollar sign</li>
+                <li>Variables cannot contain spaces or start with a number</li>
+                <li>The equals operator assigns a data value to a varaible</li>
+                <li>If there are any calculations to the right of the = operator those are performed before the value is
+                    assigned to the variable on the left of the operator</li>
+                <li>JavaScript has built in keywords, these keywords are off limits as variable names</li>
+                <li>After a value is assigned to a variable using the assignment operator, you can assign the value of
+                    that
+                    variable to another variable using the assignment operator.</li>
+                <li>When JavaScript variables are declared, they have an inital valye of undefined</li>
+                <li>If you do a mathematical operation on an undefined varaible the result will be NaN, which means "Not
+                    A
+                    Number"</li>
+                <li>If you concatenate a string with an undefined variable you will get a sting of undefined</li>
+                <li>When declaring variables with var, they can be eaisly overwritten, when we use the let variable a
+                    varible
+                    with the same name can only be declared once </li>
+                <li>A readonly variable where it cannot be overwritten once assigned with a value is const</li>
+                <li>You cannot update a const variable with a new value</li>
+                <li>It is common for developers to use uppercase varaible identfiers for immutable values, and camel
+                    case
+                    for
+                    mutable</li>
+                <li>Let keyword has to be run in sequential order</li>
+                <li>var keyword does not have to be written in sequential order</li>;
+                <li>The let keyword only exists in the code block and will run an error if referenced from outside that
+                    code
+                    block</li>
+                <li>The var keyword scope can be referenced outside the code block without an error</li>
+                <li>let had block scoping but let does not</li>
+                <li>Programmers prefer let over var as we want an error to be thrown rather than undefined</li>
+                <li>programmers want the console to complain if there is a problem with the code</li>
+                <li>var keyword declares a variable</li>
+                <li>the correct way to declare a variable is with let</li>
+                <li>with let our code reads from top to bottom</li>
+                <li>let shows a console log if there is an error</li>
+                <li>var does not print in the console log if there is an error</li>
+                <li>var variable shows as undefined if there is an error</li>
+                <li>best practice always use a let keyword</li>
+            </ul>
+            <h2>The rules regarding scope</h2>
+            <ul>
+                <li>If you declare a variable with the var keyword in a function or block of code, its use is local to
+                    that
+                    function</li>
+                <li>if you use a variable without declaring its var keyword, and a global variable of the same name
+                    exists,
+                    the
+                    local variable is assumed to be the already existing global variable</li>
+                <li>If you declare a variable locally with a var keyword, but you do not initialise it (i.e. assigned a
+                    value)
+                    it is local and accessible but not defined</li>
+                <li>If you declare a variable locally without the var keyword, or explicitly declare it globally but do
+                    not
+                    initialise it, it is accessible globally but again not defined.</li>
+            </ul>
+
+            <h4 class="example-text">Declaring a variable</h4>
+            <div class="example">
+                <pre>
         <code>var x;</code>
     </pre>
-    <p>declaring a variable.</p>
-</div>
-<div class="example">
-    <pre>
+                <p>declaring a variable.</p>
+            </div>
+            <div class="example">
+                <pre>
         <code>var winners = 2;</code>
     </pre>
-    <p>This statement declares a variable named winners and assigns a numeric value of 2 to it.</p>
-</div>
-<div class="example">
-    <pre>
+                <p>This statement declares a variable named winners and assigns a numeric value of 2 to it.</p>
+            </div>
+            <div class="example">
+                <pre>
         <code>var name = "Duke";</code>
     </pre>
-    <p>This statement assigns a string of characters to the variable name.</p>
-</div>
-<div class="example">
-    <pre>
+                <p>This statement assigns a string of characters to the variable name.</p>
+            </div>
+            <div class="example">
+                <pre>
         <code>var isEligible = false;</code>
     </pre>
-    <p>This statement assigns the value false to the variable isEligible.  We call true/false values "booleans"</p>
-</div>
-<div class="example">
-    <pre>
+                <p>This statement assigns the value false to the variable isEligible. We call true/false values
+                    "booleans"
+                </p>
+            </div>
+            <div class="example">
+                <pre>
         <code>var losers;</code>
     </pre>
-    <p>If you want to create a variable without an initial value you can then assign it a value later.</p>
-</div>
+                <p>If you want to create a variable without an initial value you can then assign it a value later.</p>
+            </div>
 
-<code> var ourName;</code>
-<li>this creates a variable called OurName</li>
-<li>In Javascript we end statements with semicolons</li>
-
+            <code> var ourName;</code>
+            <li>this creates a variable called OurName</li>
+            <li>In Javascript we end statements with semicolons</li>
+        </section>
+        <section id="keyWords">
+            <h2>Key Words</h2>
+            <ul>
+                <li>var</li>
+                <li>let</li>
+                <li>const</li>
+            </ul>
+        </section>
+        <section id="codeKeyWords">
+            <h2>Code Keywords</h2>
+            <ul>
+                <li>var</li>
+                <li>let</li>
+                <li>const</li>
+            </ul>
+        </section>
+        <section id="codeExamples">
+            <h2>Code Examples</h2>
+        </section>
+        <section id="questions">
+            <h2>Questions</h2>
+        </section>
+        <section id="references">
+            <h2>References</h2>
+            <ul>
+                <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-javascript/what-is-a-data-type">
+                        freeCodeCamp: What Is a Data Type, and What Are the Different Data Types in JavaScript?
+                    </a> </li>
+            </ul>
+        </section>
+    </main>
 </body>
+
 </html>
