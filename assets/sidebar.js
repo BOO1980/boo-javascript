@@ -29,7 +29,10 @@
       <details class="nav-group" open>
         <summary>Notes</summary>
         <nav class="nav-list" aria-label="Notes">
-          <a href="${href('javaScript-notes/javaScript-overview.html')}" data-page="overview">Main Overview</a>
+          <a href="${href('javaScript-notes/javaScript-overview.html')}" data-page="overview">JavaScript Overview</a>
+          <a href="${href('javaScript-notes/javaScript-data-types.html')}" data-page="data-types">JavaScript Data Types</a>
+          <a href="${href('javaScript-notes/javaScript-variables.html')}" data-page="variables">JavaScript Variables</a>
+          <a href="${href('javaScript-notes/javaScript-common-functions.html')}" data-page="common-functions">JavaScript Common Functions</a>
         </nav>
       </details>
       <details class="nav-group">

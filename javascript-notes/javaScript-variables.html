@@ -2,25 +2,46 @@
 <html lang="en">
 
 <head>
-    <title>Variables</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Assets/Styles/default.css" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../prettierrc.json" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <title>JavaScript Variables</title>
 </head>
 
-<body>
-    <main>
-        <h1>Variables</h1>
+<body data-page="variables">
+    <header class="topic-bar">
+        <div class="topic-bar__title">
+            <h1>JavaScript Variables</h1>
+        </div>
+
+        <nav class="quick-links" aria-label="On this page">
+            <a href="#overview">Overview</a>
+            <a href="#keywords">Keywords</a>
+            <a href="#codekeywords">Code Keywords</a>
+            <a href="#codeexamples">Code Examples</a>
+            <a href="#questions">Questions</a>
+            <a href="#resources">Resources</a>
+            <a href="#todo">TODO</a>
+        </nav>
+    </header>
+    <div id="sidebar-mount"></div>
+    <main class="content">
         <section id="overview">
             <h2>Overview</h2>
             <ul>
                 <li>A Variable is nothing more than a named reference to a piece of data</li>
-                <li>Variables are case sensitive, this means captialisation maatters</li>
-                <li></li>
+                <li>Variables are case sensitive, this means capitalisation matters</li>
+                <li>In JavaScript, variables act as containers for storing data that you can access and modify
+                    throughout your program.</li>
                 <li>A variable is a named container that stores a value of a specific data type, allowing you to
-                    reference
-                    and manipulate it throughout your code.</li>
-                <li>Generally variables are written in CamelCase, where each subsequent word is captialised</li>
+                    reference and manipulate it throughout your code.</li>
+                <li>Generally variables are written in CamelCase, where each subsequent word is capitalised</li>
+                <li>There are certain keywords in JavaScript that you cannot use as variable names, such as let, const,
+                    function, or return, as they are reserved for the language itself.</li>
+                <li>You should also avoid using special characters like exclamation points (!) or at (@) symbols, in
+                    your variable names. It is best to keep variable names readable by using letters, numbers,
+                    underscores, or dollar signs.</li>
                 <li>A Variable can hold a string, a number, a boolean, an array, another object, or a function reference
                 </li>
                 <li>When you define a variable using the var keyword means you can access these variables on a local
@@ -29,24 +50,24 @@
                 <li>You can create variables like x and y and then reference those throughout your program and do
                     mathematical operations like addition </li>
                 <li>You can create your own variable names and assign values to them</li>
+                <li>To assign a value to a variable you use the assignment operator, which is the equals sign</li>
+                <li>The assignment operator does not check for equality </li>
+                <li>One advantage of using the let keyword to declare variables is that you can reassign values to them.
+                    In programming, reassignment means giving a new value to a variable that already has one.</li>
                 <li>If a variable is defined without the var keyword then the variable will be a global variable (which
                     should
                     be avoided)
                     <ul>
                         <li>The reason why you should avoid global variables is because the application is part of a
-                            larger
-                            JavaScript application</li>
-                        <li>A variable of the same name may be in use in another part of the code in another file - and
-                            can
-                            be
-                            overridden whatever data is originally contained</li>
+                            larger JavaScript application</li>
+                        <li>A variable of the same name may be in use in another part of the code in another file -
+                            and can be overridden whatever data is originally contained</li>
                         <li>Another libraries script could override the variable if it was global</li>
                     </ul>
                 </li>
                 <li>Variables in JavaScript are basically named buckets of data, a way of creating a reference to that
                     data
-                    so
-                    you are able to access that data again and again</li>
+                    so you are able to access that data again and again</li>
                 <li>Variables can use variables to persist data from one process to another.</li>
                 <li>Setting the scope of the variable is important if you have global variables with the same name</li>
                 <li>A variable can hold different data types at different times depending on context</li>
@@ -82,8 +103,7 @@
                 <li>Let keyword has to be run in sequential order</li>
                 <li>var keyword does not have to be written in sequential order</li>;
                 <li>The let keyword only exists in the code block and will run an error if referenced from outside that
-                    code
-                    block</li>
+                    code block</li>
                 <li>The var keyword scope can be referenced outside the code block without an error</li>
                 <li>let had block scoping but let does not</li>
                 <li>Programmers prefer let over var as we want an error to be thrown rather than undefined</li>
@@ -159,7 +179,7 @@
                 <li>const</li>
             </ul>
         </section>
-        <section id="codeKeyWords">
+        <section id="codekeywords">
             <h2>Code Keywords</h2>
             <ul>
                 <li>var</li>
@@ -167,22 +187,67 @@
                 <li>const</li>
             </ul>
         </section>
-        <section id="codeExamples">
+        <section id="codeexamples">
             <h2>Code Examples</h2>
+            <ul>
+                <li><code>var x;</code></li>
+                <li><code>var winners = 2;</code></li>
+                <li><code>var name = "Duke";</code></li>
+                <li><code>var isEligible = false;</code></li>
+                <li><code>var losers;</code></li>
+                <li><code>var ourName;</code></li>
+                <li><code>let age = 25;</code>
+                    <code>age = 30;</code>
+                    <p>This code declares a variable named age using the let keyword and assigns it an initial value of
+                        25.
+                        Then, it reassigns the value of age to 30. This demonstrates how variables declared with let can
+                        be
+                        updated with new values.</p>
+
+                </li>
+            </ul>
         </section>
         <section id="questions">
             <h2>Questions</h2>
+            <ul>
+                <li>Which keyword would you use to declare a variable in JavaScript when you plan to update its value
+                    later?</li>
+                <li>Give a valid variable name in JavaScript.</li>
+                <li>What is the difference between var, let, and const in JavaScript?</li>
+                <li>What are some best practices for naming variables in JavaScript?</li>
+                <li>Give 3 invalid variable names in JavaScript.</li>
+                <li>What is the difference between primitive and reference data types in JavaScript?</li>
+                <li>Why is it important to use descriptive variable names in your code?</li>
+                <li>What happens if you try to reassign a value to a variable declared with const?</li>
+                <li>What is the scope of a variable declared with var compared to let and const?</li>
+            </ul>
         </section>
-        <section id="references">
-            <h2>References</h2>
+        <section id="resources">
+            <h2>Resources</h2>
             <ul>
                 <li><a target="_blank" rel="noopener noreferrer"
                         href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-javascript/what-is-a-data-type">
                         freeCodeCamp: What Is a Data Type, and What Are the Different Data Types in JavaScript?
                     </a> </li>
+                <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.freecodecamp.org/learn/javascript-v9/lecture-introduction-to-javascript/what-are-variables">
+                        freeCodeCamp: What Are Variables, and What Are Guidelines for Naming JavaScript Variables?
+                    </a></li>
+            </ul>
+        </section>
+        <section id="todo">
+            <h2>TODO</h2>
+            <ul>
+                <li>Review and expand notes with more code examples</li>
+                <li>Clean up the code using ChatGPT suggestions</li>
+                <li>Start building projects to apply what I've learned</li>
             </ul>
         </section>
     </main>
+    <!-- Sidebar JS -->
+    <script src="../assets/layout.js"></script>
+    <script src="../assets/script.js"></script>
+    <script src="../assets/sidebar.js"></script>
 </body>
 
 </html>
